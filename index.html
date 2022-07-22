@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Real Madrid Store</title>
+</head>
+
+<body>
+  <div class="models">
+    <div class="camisaItem">
+      <a href="">
+        <div class="camisaItem-img"><img src="./imagens/camisa1.png" /></div>
+        <div class="camisaItem2-img"><img src="./imagens/camisa1Back.png" /></div>
+        <div class="camisaItem-name">Camisa Real Madrid | 21/22 | Home</div>
+        <div class="camisaItem-price">R$ 249.99</div>
+      </a>
+    </div>
+
+    <div class="cartItem">
+      <img src="">
+      <div class="cartiItem-infos">
+        <div class="cartItem-name"></div>
+        <div class="cartItem-model">Style: </div>
+        <div class="cartItem-player">Player: </div>
+        <div class="cartItem-quantity">Quantity: <small class="small">remover</small></div>
+      </div>
+    </div>
+
+  </div>
+
+  <main>
+    <div class="header">
+      <h1>Jerseys</h1>
+      <div class="header-cart"><small>0</small> 🛒</div>
+    </div>
+    <div class="camisasArea"></div>
+  </main>
+
+
+  <div class="windowArea">
+    <div class="windowBody">
+      <div class="windowImgs">
+        <img class="bigImg" src="./imagens/camisa1.png" />
+        <div class="windowImg-Player"> <span></span> </div>
+        <div class="windowImgs-small">
+          <img data-img="0" class="imgSmall selected-img" src="./imagens/camisa1.png" />
+          <img data-img="1" class="imgSmall" src="./imagens/camisa1Back.png" />
+          <img data-img="2" class="imgSmall" src="./imagens/camisa1Model.jpg" />
+        </div>
+      </div>
+      <div class="windowInfos">
+        <h1>Camisa Real Madrid | 21/22 | Home</h1>
+        <div class="windowInfos-price">249.99</div>
+        <div class="windowInfos-sizeArea">
+          <div class="windowInfos-phaseSize">Size</div>
+          <div class="windowInfos-sizes">
+            <div data-size="0" class="windowInfos-size selected">XS</div>
+            <div data-size="1" class="windowInfos-size">S</div>
+            <div data-size="2" class="windowInfos-size">M</div>
+            <div data-size="3" class="windowInfos-size">L</div>
+            <div data-size="4" class="windowInfos-size">XL</div>
+            <div data-size="5" class="windowInfos-size">2XL</div>
+          </div>
+        </div>
+        <div class="windowInfos-modelArea">
+          <div class="windowInfos-phaseModel">Style</div>
+          <div class="windowInfos-models">
+            <div data-model="0" class="windowInfos-model selected">Man</div>
+            <div data-model="1" class="windowInfos-model">Women</div>
+          </div>
+        </div>
+        <div class="quantityPlayer">
+          <div class="windowInfos-quantArea">
+            <div class="windowInfos-phaseQuant">Quantity</div>
+            <div class="windowInfos-quantButtons">
+              <button class="windowInfos-quantMenos">-</button>
+              <div class="windowInfos-qt">1</div>
+              <button class="windowInfos-quantMais">+</button>
+            </div>
+          </div>
+          <div class="playerNumber">
+            <div class="windowInfos-phasePlayer">Player</div>
+            <select class="players" name="players" id="players">
+              <option value="None">None</option>
+              <option value="Carvajal 2">Carvajal <span>- 2</span></option>
+              <option value="Militao 3">E. Militão - 3</option>
+              <option value="Alaba 4">Alaba - 4</option>
+              <option value="Vallejo 5">Vallejo - 5</option>
+              <option value="Nacho 6">Nacho - 6</option>
+              <option value="Hazard 7">Hazard - 7</option>
+              <option value="Kroos 8">Kroos - 8</option>
+              <option value="Benzema 9">Benzema - 9</option>
+              <option value="Modric10">Mocric - 10</option>
+              <option value="Asensio11">Asensio - 11</option>
+              <option value="Marcelo12">Marcelo - 12</option>
+              <option value="Casemiro14">Casemiro - 14</option>
+              <option value="Valverde15">Valverde - 15</option>
+              <option value="Lucas17">Lucas V. - 17</option>
+              <option value="Jovic16">Jovic - 16</option>
+              <option value="Ceballos19">D. Ceballos - 19</option>
+              <option value="Vini Jr.20">Vini Jr. - 20</option>
+              <option value="Rodrygo21">Rodrygo - 21</option>
+              <option value="Mendy23">F. Mendy - 23</option>
+              <option value="Mariano24">Mariano - 24</option>
+              <option value="Camavinga25">Camavinga - 25</option>
+              <option value="Personalize">Personalize</option>
+            </select>
+          </div>
+          <div class="playerPerso">
+            <div class="playerPerso-phase">Number <span>Name</span></div>
+            <div class="playerPerso-input">
+              <input id="playerNumber" type="number" maxlength="2">
+              <input id="playerName" type="text" maxlength="10">
+            </div>
+          </div>
+        </div>
+        <div class="mainButtons">
+          <div class="windowInfos-add">ADD TO CART</div>
+          <div class="windowInfos-out">BACK</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <aside>
+
+    <div class="cartArea">
+      <div class="closeCart">❌</div>
+      <h1>Your Cart</h1>
+      <div class="cart"></div>
+      <div class="cartTotal">
+        <span>Total</span>
+        <span>R$ --</span>
+      </div>
+      <div class="checkout">Checkout</div>
+    </div>
+
+  </aside>
+
+  <script src="./camisas.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
